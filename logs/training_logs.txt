@@ -1,0 +1,67 @@
+[CONFIG SETTINGS]
+train_image_dir: dataset/images
+train_depth_dir: dataset/depth
+batch_size: 4
+num_workers: 1
+epochs: 10
+lr: 0.0001
+weight_decay: 0.05
+mixed_precision: True
+output_dir: checkpoints
+val_split: 0.1
+test_split: 0.1
+quick_test: False
+prefetch_factor: 4
+pin_memory: False
+benchmark: True
+accumulation_steps: 2
+grad_clip: 1.0
+warmup_steps: 500
+T_max: 5000
+
+[MODEL PARAMS]
+Encoder: 86.74M
+Decoder: 57.15M
+Total:   143.89M
+
+Epoch 1:
+Train: 1.5733 (13783.75s)
+Val:   0.9346 (535.96s)
+
+Epoch 2:
+Train: 0.7979 (13816.63s)
+Val:   0.4950 (533.73s)
+
+Epoch 3:
+Train: 0.4617 (13849.04s)
+Val:   0.3157 (533.88s)
+
+Epoch 4:
+Train: 0.2787 (13795.44s)
+Val:   0.1879 (527.79s)
+
+Epoch 5:
+Train: 0.1736 (13793.90s)
+Val:   0.1223 (527.89s)
+
+Epoch 6:
+Train: 0.1119 (13779.24s)
+Val:   0.0777 (532.71s)
+
+Epoch 7:
+Train: 0.0714 (13966.07s)
+Val:   0.0498 (528.42s)
+
+Epoch 8:
+Train: 0.0465 (13814.86s)
+Val:   0.0299 (541.01s)
+
+Epoch 9:
+Train: 0.0304 (14545.62s)
+Val:   0.0216 (560.67s)
+
+Epoch 10:
+Train: nan (14531.83s)
+Val:   nan (552.74s)
+Test:  nan (552.13s)
+
